@@ -1,0 +1,58 @@
+{
+  "contracts": [
+    {
+      "id": 1,
+      "contract": 2018,
+      "offer": 1255,
+      "data": "Alış"
+    },
+    {
+      "id": 2,
+      "contract": 2019,
+      "offer": 50000,
+      "data": "Satış"
+    },
+    {
+      "id": 3,
+      "contract": 2018,
+      "offer": 741141,
+      "data": "Satış"
+    },
+    {
+      "id": 4,
+      "contract": 2018,
+      "offer": 44555,
+      "data": "Alış"
+    },
+    {
+      "id": 5,
+      "contract": 2018,
+      "offer": 964748,
+      "data": "Alış"
+    },
+    {
+      "id": 6,
+      "contract": 2018,
+      "offer": 85969,
+      "data": "Alış"
+    },
+    {
+      "id": 7,
+      "contract": 2019,
+      "offer": 854747,
+      "data": "Alış"
+    },
+    {
+      "id": 8,
+      "contract": 2018,
+      "offer": 84564,
+      "data": "Alış"
+    },
+    {
+      "id": 9,
+      "contract": 2019,
+      "offer": 84545,
+      "data": "Satış"
+    }
+  ]
+}

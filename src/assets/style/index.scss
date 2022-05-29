@@ -1,0 +1,260 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+$headerheight: 70px;
+$headerbackground: #131e56;
+$color: white;
+$footer_color: black;
+$footerbackground: lightgray;
+
+html{
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+
+.fullheight{
+  height: 100%;
+}
+
+
+.header {
+  height: $headerheight;
+  background-color: $headerbackground;
+  color: $color;
+  display: flex;
+  top: 0;
+
+  .logo{
+    background-image: url(../epias-beyaz.svg);
+    background-repeat: no-repeat;
+    background-position: 2px 6px;
+    width: 80%;
+    height: 40px;
+    margin: 10px 5px 0 15px;
+  }
+  .user{
+    float: right;
+    display: flex;
+    width: 20%;
+    span{
+      margin-top: 25px;
+      margin-right: 15px;
+      display: flex;
+    }
+    .saveicon{
+      width: 20px;
+      filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+      height: 20px;
+      margin-right: 5px;
+    }
+
+    .layouticon{
+      width: 30px;
+      filter: invert(22%) sepia(55%) saturate(1409%) hue-rotate(87deg) brightness(119%) contrast(49%);
+      height: 30px;
+      margin-top: 18px;
+      margin-right: 5px;
+    }
+    .name{
+      border-radius: 50%;
+      margin-top: 10px;
+      width: 33px;
+      height: 30px;
+      padding: 8px;
+      border: 1px solid #fff;
+      color: #fff;
+      text-align: center;
+      margin-right: 15px;
+
+      font: 25px Arial, sans-serif;
+    }
+  }
+}
+
+
+.mainsplit{
+  height: 84vh;
+}
+
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+
+.tablesetting{
+  float: right;
+
+}
+
+.tablepopupmenu{
+  position: relative;
+  display: initial;
+  width: 100px;
+  .popupmenucontent{
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 5px;
+  }
+}
+
+.gutter {
+  background-color: #eee;
+
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-vertical {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+  cursor: row-resize;
+}
+
+
+
+.gutter.gutter-horizontal {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+  cursor: col-resize;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.topTable{
+  height: 50vh;
+  overflow-y: hidden;
+}
+
+.bottomTable{
+  height: 40vh;
+  overflow-y: hidden;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+}
+
+table {
+  font-size: small;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  tr {
+    td, th {
+      padding: 10px;
+    }
+    th {
+      background-color: #ddd;
+      text-align: left;
+    }
+  }
+  tfoot {
+    td {
+      background-color: #ddd;
+    }
+  }
+
+
+}
+
+.setting{
+  margin: 15px ;
+  float: right;
+  background-color: #dbddb6;
+  padding: 15px 0 15px 15px;
+  border: 1px solid black;
+  width: 70%;
+  height: auto;
+
+  .headsetting{
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .settingvalue{
+    font-weight: 300;
+  }
+
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 25px;
+  color: $footer_color;
+  background-color: $footerbackground;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  padding-top: 8px;
+
+
+  .company{
+    float: left;
+  }
+
+  .version{
+    float: right;
+    margin-right: 15px;
+  }
+}
